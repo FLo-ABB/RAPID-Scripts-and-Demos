@@ -54,16 +54,6 @@ The module includes error handling for various scenarios, such as:
 - Ensure that the naming convention `pToolCenterTaughtX` is followed for the calibration points, where X ranges from 1 to `nNumberPoints`.
 - The module uses the `tool0` frame for calculations.
 
-## Functions
-
-- `NormVector(pos vector)`: Normalizes a vector (currently unused in the main logic)
-
-For more detailed information about specific procedures or usage, please refer to the inline comments in the module code.
-
-# ToolCenterCalculations Module
-
-[... Previous content remains unchanged ...]
-
 ## Step-by-Step Explanation
 
 This section provides a detailed explanation of the Tool Center Point (TCP) calibration process, with accompanying visuals.

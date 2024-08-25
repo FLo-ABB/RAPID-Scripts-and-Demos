@@ -9,7 +9,7 @@ MODULE ToolCenterCalculations
     ! ------------------------------------------------------------------------------
 
     ! nNumberPoints defines the number of points used for ToolCenter calibration
-    CONST num nNumberPoints:=5;
+    CONST num nNumberPoints:=5; ! EDIT HERE
     VAR robtarget robtargetsArray{nNumberPoints};
     ! Robtargets defined using tool0 pointing at the world fixed tip in wobj0
     ! Names has to be pToolCenterTaughtX where X go from 1 to the number of points taught
@@ -18,6 +18,7 @@ MODULE ToolCenterCalculations
     CONST robtarget pToolCenterTaught3:=[[817.3,-126.79,1056.294],[0.242960218,0.1903601708,0.9324608367,0.1877501685],[-1,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
     CONST robtarget pToolCenterTaught4:=[[1148.2,-123.85,1066.227],[-0.2265697823,0.2564897536,0.9365791002,0.0754899275],[-1,0,0,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
     CONST robtarget pToolCenterTaught5:=[[1131,188.9,1016.085],[-0.2129896855,-0.1088798392,0.9284486291,-0.2841895804],[0,-1,-1,0],[9E9,9E9,9E9,9E9,9E9,9E9]];
+    ! CONST robtarget pToolCenterTaughtX:=...; ! EDIT HERE
 
     PERS pos posArraySphereTool0{nNumberPoints};
 
@@ -27,7 +28,8 @@ MODULE ToolCenterCalculations
     VAR pos posToolCenter;
     VAR num nMaxError;
     VAR num nMeanError;
-
+    
+    ! Result:
     TASK PERS tooldata toolToDeterminate:=[TRUE,[[20.1787,0.743817,363.376],[0.946578,0.191449,0.0562058,0.253336]],[1,[0,0,1],[1,0,0,0],0,0,0]];
 
     PROC main()
@@ -133,14 +135,6 @@ MODULE ToolCenterCalculations
         TPWrite "- the naming convention pToolCenterTaughtX";
         RAISE ;
     ENDPROC
-
-    FUNC pos NormVector(pos vector)
-        VAR num magnitude;
-        
-        magnitude := VectMagn(vector);
-        
-        RETURN [vector.x/magnitude, vector.y/magnitude, vector.z/magnitude];
-    ENDFUNC
 
     PROC syncRS()
         MoveJ pToolCenterTaught1,vmax,fine,tool0;
