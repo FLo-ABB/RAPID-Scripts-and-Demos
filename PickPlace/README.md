@@ -1,5 +1,9 @@
 # PickPlace Module
 
+![Pick Place sequence](https://raw.githubusercontent.com/FLo-ABB/RAPID-Scripts-and-Demos/main/PickPlace/img/PickAndPlaceSequence.gif)
+
+*Figure 1: Pick Place sequence using the matrix operation procedure*
+
 ## Overview
 The PickPlace module is a RAPID program designed for ABB robots to perform pick and place operations in a matrix-like arrangement. It provides a flexible and robust solution for handling objects in a predefined grid pattern.
 
