@@ -1,5 +1,4 @@
 MODULE PickPlace
-    ! Constants
     CONST num nZOffset:=50;
     CONST num nGripperPickTime:=0.7;
     CONST num nGripperPlaceTime:=0.2;
@@ -9,9 +8,9 @@ MODULE PickPlace
     CONST num nColumnSpacing:=10;
     CONST num nRowSpacing:=15;
     CONST num nLevelSpacing:=80;
+    CONST loaddata loadPart:=[1,[0,0,15],[1,0,0,0],0,0,0];
     VAR errnum ERR_INDEX:=-1;
 
-    ! Task persistent data
     TASK PERS tooldata myTool:=[TRUE,[[0,0,0],[1,0,0,0]],[0,[0,0,0],[1,0,0,0],0,0,0]];
     TASK PERS wobjdata myWobj:=[FALSE,TRUE,"",[[0,0,0],[1,0,0,0]],[[0,0,0],[1,0,0,0]]];
 
@@ -44,10 +43,12 @@ MODULE PickPlace
         IF Present(pick) THEN
             ! Manage Inputs/Outputs to pick
             ! SetDO DO_Gripper, 1;
+            GripLoad loadPart;
             WaitTime nGripperPickTime;
         ELSE
             ! Manage Inputs/Outputs to place
             ! SetDO DO_Gripper, 0;
+            GripLoad load0;
             WaitTime nGripperPlaceTime;
         ENDIF
     ENDPROC
