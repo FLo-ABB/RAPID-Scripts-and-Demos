@@ -65,7 +65,7 @@ This section provides a detailed explanation of the Tool Center Point (TCP) cali
 - `findSphereInWobj0()` is called to fit a sphere to the taught points in the work object frame (wobj0).
 - This step uses the `FitSphere` function to determine the center and radius of the sphere.
 
-![Sphere in Work Object Frame](https://github.com/FLo-ABB/RAPID-Scripts-and-Demos/tree/main/ToolCenterCalculations/img/SphereInWobj0.png)
+![Sphere in Work Object Frame](https://raw.githubusercontent.com/FLo-ABB/RAPID-Scripts-and-Demos/main/ToolCenterCalculations/img/SphereInWobj0.png)
 
 *Figure 1: Sphere fitted to the taught points in the work object frame*
 
@@ -77,7 +77,7 @@ This section provides a detailed explanation of the Tool Center Point (TCP) cali
 - `findSphereInTool0()` fits another sphere to the transformed points in the tool frame.
 - The center of this sphere represents the Tool Center Point (TCP) relative to the tool0 frame.
 
-![Sphere in Tool Frame](https://github.com/FLo-ABB/RAPID-Scripts-and-Demos/tree/main/ToolCenterCalculations/img/SphereInTool0.png)
+![Sphere in Tool Frame](https://raw.githubusercontent.com/FLo-ABB/RAPID-Scripts-and-Demos/main/ToolCenterCalculations/img/SphereInTool0.png)
 
 *Figure 3: Sphere fitted to the transformed points in the tool frame, with its center representing the TCP*
 
