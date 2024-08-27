@@ -5,3 +5,4 @@ This repository contains a collection of RAPID scripts for ABB robots. The scrip
 
 - [🛠️ ToolCenterCalculations](https://github.com/FLo-ABB/RAPID-Scripts-and-Demos/tree/main/ToolCenterCalculations): Module for calibrating a Tool Center Point (TCP) using sphere fitting methods
 - [💪 PickPlace](https://github.com/FLo-ABB/RAPID-Scripts-and-Demos/tree/main/PickPlace): Module for manutention applications providing pick and place with Z offset and 3D matrix pick and place operations.
+- [⏱️ CycleTime](https://github.com/FLo-ABB/RAPID-Scripts-and-Demos/tree/main/CycleTime): Module for measuring and displaying cycle times.
