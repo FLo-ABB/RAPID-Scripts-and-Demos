@@ -1,6 +1,6 @@
 # CycleTime Module
 
-![chrono in simulation](https://raw.githubusercontent.com/FLo-ABB/RAPID-Scripts-and-Demos/main/cycleTime/img/cycleTime.gif)
+![chrono in simulation](https://raw.githubusercontent.com/FLo-ABB/RAPID-Scripts-and-Demos/main/CycleTime/img/cycleTime.gif)
 
 *Figure 1: Total cycle time display in a simulation label*
 
